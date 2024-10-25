@@ -1,0 +1,97 @@
+/* General app styling */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c1c1e; /* Slightly lighter black for contrast */
+  color: white;
+}
+
+/* Main container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c2c2e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add Todo section styling */
+.add-todo {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.add-todo input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 8px;
+  border: 1px solid #6e6e73;
+  border-radius: 5px;
+  background-color: #3a3a3c;
+  color: white;
+}
+
+.add-todo button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007aff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-todo button:hover {
+  background-color: #005bb5;
+}
+
+/* List Todo section styling */
+.list-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #3a3a3c;
+  border-radius: 5px;
+  color: white;
+}
+
+.list-todo p {
+  margin: 0;
+  flex: 1;
+  color: #e5e5ea;
+  font-size: 1rem;
+}
+
+/* Button styling within each List Todo item */
+.list-todo button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff3b30;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list-todo button:first-child {
+  background-color: #34c759; /* Green color for Edit */
+}
+
+.list-todo button:hover {
+  background-color: #d63031; /* Slightly darker red for Delete hover */
+}
+
+.list-todo button:first-child:hover {
+  background-color: #28a745; /* Slightly darker green for Edit hover */
+}
